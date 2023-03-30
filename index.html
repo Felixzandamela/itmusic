@@ -598,7 +598,7 @@ const setMusicList =  () => {
   
 
 const addList = (data) => {
-  let img = !data.image || data.image == undefined ?  "/avatar.jpg" : data.image 
+  let img = !data.image || data.image == undefined ?  "avatar.jpg" : data.image 
     data.listened > 1000 ? listened = formatToUnits(data.listened,1) : listened = data.listened
     
     data.downloads > 1000 ? downloads = formatToUnits(data.downloads,1) : downloads = data.downloads;
