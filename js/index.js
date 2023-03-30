@@ -45,7 +45,7 @@ str = str.replace(/(?:\r\n|\r|\n)/g, '<br>');
   srcs = data.src
   nam = data.name
    banners.forEach((bunner) => {
-    bunner.src = !data.image || data.image == undefined ? "/avatar.jpg" :
+    bunner.src = !data.image || data.image == undefined ? "avatar.jpg" :
     data.image;
   })
   trackCategory.forEach((category) => {
