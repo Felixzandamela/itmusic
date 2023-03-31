@@ -14,6 +14,7 @@ body {
     padding: 0;
     transition: 0.3ms;
     font-family: "Verdana";
+    -webkit-text-size-adjust: 12px;
 }
 
  .labelTitle{
