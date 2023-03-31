@@ -1,5 +1,4 @@
-
-/* created by Felix Zandamela*/
+ 
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 * {
     box-sizing: border-box;
@@ -427,31 +426,51 @@ border-bottom:1px solid RGBA(60, 173, 241,0.20);
   color: currentColor;
 }
 
+  
 .track{
   display:flex;
-  padding: 8px 2px;
-  border-bottom:1px solid RGBA(60, 173, 241,0.20);
+  width: 100%;
+  padding:0 2px;
+  align-items: center;
 }
 
 
 .trackBanner{
   min-height: 40px;
-  height: 45px;
-  width: 45px;
+  height: 40px;
+  width: 40px;
   margin:0 10px 0 6px;
-  min-width: 45px ;
+  min-width: 40px ;
+}
+
+.flex-tra-datas{
+  display: flex;
+  width: calc(100% - 55px);
+  justify-content: space-between;
+  padding: 5px 0;
+  border-bottom:1px solid RGBA(60, 173, 241,0.20);
 }
 
 .trackIndicator{
-  min-height: 45px;
-  height: 45px;
-  width: 30px;
-  min-width: 30px ;
+  min-height: 40px;
+  height: 40px;
+  width: 50px;
+  min-width: 50px ;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.data-names .trackname{
+  width: 100% ;
+  text-overflow: ellipsis;
+  letter-spacing: 0.3px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.data-names .trackalbum{
+  margin-top: 8px;
+}
 
 .trackBanner img{
   width: 100%;
@@ -469,14 +488,14 @@ border-bottom:1px solid RGBA(60, 173, 241,0.20);
 }
 
 .trackalbum, .trackPerformance div{
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .tpsc{
   display:flex;
   align-items: right;
   justify-content:space-between;
-  width: 100%;
+  width: 70px;
 }
 .trackPerformance{
   min-width: 50px;
@@ -504,13 +523,17 @@ border-bottom:1px solid RGBA(60, 173, 241,0.20);
   display: none;
 }
 
-.tds{
+tds{
   width: 100%;;
 }
 
 .data-names{
-  width: 100%;
+  width: calc(100% - 60px);
+  display: flex;
+  flex-direction: column;
 }
+
+
 
 .track .trackIndicator .indicator {
  display:none;
@@ -518,15 +541,19 @@ border-bottom:1px solid RGBA(60, 173, 241,0.20);
 .track.active{
   background: RGBA(60, 173, 241,0.20);
 }
-track.active .tpsc{
-  display: none;
+.track.active .playIndicator{
+  display: none!important;
 }
-
+.track.active .flex-tra-datas{
+  border: 1px solid transparent !important;
+}
 .track.active .trackIndicator .indicator {
  display:flex;
  align-items: center;
   justify-content: center;
-  
+}
+.track.active .playIndicator {
+  display: none;
 }
 .tracklists .indicator span {
  height:20px;
@@ -554,6 +581,7 @@ track.active .tpsc{
 }
 
 
+  
 
 .container-equalizer{
   z-index: 20;
@@ -1139,4 +1167,24 @@ animation-timing-function: ease-in-out;
 .labelTitle{
   color: #3264fe;
 }
+
+ 
+.boxloader{
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: #061b26;
+  z-index: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader-cont .labelTitle{
+  font-size: 3em!important;
+  text-align: center;
+  margin-top: 60px;
+}
+ 
  
