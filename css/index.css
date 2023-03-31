@@ -3,6 +3,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    -webkit-text-size-adjust: 12px;
 }
 
 body {
