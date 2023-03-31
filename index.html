@@ -462,8 +462,8 @@
  },
  { id:2,
  category:"Pop",
- name:"Hugh Grant & Drew Barrymore-Way Back Into Love",
- src:"assets/Way-Back-Into-Love.mp3",
+ name:"Audiobinger - The_Garden_State",
+ src:"https://s3.eu-west-2.amazonaws.com/nelsoncodepen/Audiobinger_-_The_Garden_State.mp3",
  image:"",
  downloads:0,
  listened:10,
@@ -676,7 +676,7 @@ const addList = (data) => {
   setCurrentTrack(data);
   audio.src = data.src;
   audio.load()
-  audio.crossOrigin = "anonymous";
+ // audio.crossOrigin = "anonymous";
   playAndPause()
   }
   
