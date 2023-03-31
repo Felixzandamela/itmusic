@@ -340,7 +340,7 @@
      <div id="dragg-names" class="dragg-names">
      <img class="currentBanner" src="" alt="" />
       <div>
-     <marquee class="currentName">Name </marquee>
+     <marquee id="marquee" class="currentName">Name </marquee>
      <p class="currentTrackCategory category">Category</p>
       </div>
      </div>
@@ -493,6 +493,12 @@ window.setTimeout(() =>{
 const baseUrl = document.location.origin 
 const btn = document.getElementById("sharing");
 
+function marqueePause(){
+  var marq = document.getElementById("marquee");
+  marq.stop();
+  setTimeout(function(){marq.start();}, 2000);
+}
+marqueePause()
 
 
 $("#roundVolume").roundSlider({
